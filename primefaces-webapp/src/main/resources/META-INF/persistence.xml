@@ -7,7 +7,7 @@
 		transaction-type="JTA">
 		<!-- Hibernate JPA configuration -->
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>java:app/jdbc/mycompanyDataSource</jta-data-source>
+		<jta-data-source>jdbc/mycompanyDataSource</jta-data-source>
 		<properties>		    
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="false" />
