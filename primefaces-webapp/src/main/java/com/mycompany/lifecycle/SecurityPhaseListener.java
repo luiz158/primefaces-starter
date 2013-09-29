@@ -77,12 +77,10 @@ public class SecurityPhaseListener implements PhaseListener {
 	}
 
 	private boolean isLoggedIn() {
-		boolean loggedIn = false;
-		FacesContext ctx = FacesContext.getCurrentInstance();
+      FacesContext ctx = FacesContext.getCurrentInstance();
 		LoginController controller = (LoginController) ctx.getApplication().evaluateExpressionGet(
 				ctx, "#{loginController}", Object.class);
-		loggedIn = controller.isLoggedIn();
-		return loggedIn;
+      return controller.isLoggedIn();
 	}
 
 }
