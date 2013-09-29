@@ -1,2 +1,5 @@
-target/
-/bin
+artifacts
+target
+*.iml
+*.ipr
+*.iws
