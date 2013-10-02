@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.0"
-	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
-                        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	<persistence-unit name="mycompanyDatabase"
-		transaction-type="JTA">
-		<!-- Hibernate JPA configuration -->
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>jdbc/mycompanyDataSource</jta-data-source>
-		<properties>		    
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-			<property name="hibernate.show_sql" value="false" />
-			<property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy" />
-		</properties>		
-	</persistence-unit>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+
+  <persistence-unit name="mycompanyDatabase" transaction-type="JTA">
+
+    <jta-data-source>jdbc/mycompanyDataSource</jta-data-source>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+    <validation-mode>AUTO</validation-mode>
+
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.scripts.drop-target" value="/tmp/mydrop.ddl"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="/tmp/mycreate.ddl"/>
+      <property name="eclipselink.deploy-on-startup" value="true"/>
+
+      <property name="eclipselink.logging.logger" value="JavaLogger"/>
+      <property name="eclipselink.temporal.mutable" value="false"/>
+
+    </properties>
+
+  </persistence-unit>
 </persistence>
