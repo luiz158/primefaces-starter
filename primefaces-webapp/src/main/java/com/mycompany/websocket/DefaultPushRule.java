@@ -26,13 +26,12 @@ package com.mycompany.websocket;
 
 import static org.atmosphere.cpr.BroadcasterLifeCyclePolicy.EMPTY_DESTROY;
 
+import java.util.logging.Logger;
 import org.atmosphere.cpr.AtmosphereRequest;
 import org.atmosphere.cpr.AtmosphereResource;
 import org.atmosphere.cpr.Broadcaster;
 import org.atmosphere.cpr.BroadcasterFactory;
 import org.atmosphere.cpr.BroadcasterLifeCyclePolicyListener;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Utility class for GlassFish WebSocket support with PrimeFaces.
@@ -49,7 +48,7 @@ public class DefaultPushRule extends org.primefaces.push.DefaultPushRule {
 							.replaceFirst(contextPath, "")
 							.replaceFirst(servletPath, "");
 		}
-		if (pathInfo == null || pathInfo == "") {
+		if (pathInfo == null || "".equals( pathInfo ) ) {
 			resource.setBroadcaster(BroadcasterFactory.getDefault().lookup("/*"));
 			return true;
 		}
@@ -57,18 +56,18 @@ public class DefaultPushRule extends org.primefaces.push.DefaultPushRule {
 		b.setBroadcasterLifeCyclePolicy(EMPTY_DESTROY);
 		b.addBroadcasterLifeCyclePolicyListener(new BroadcasterLifeCyclePolicyListener() {
 
-			private final Logger logger = LoggerFactory.getLogger(BroadcasterLifeCyclePolicyListener.class);
+			private final Logger logger = Logger.getLogger(BroadcasterLifeCyclePolicyListener.class.getName());
 
 			public void onEmpty() {
-				logger.trace("onEmpty {}", b.getID());
+				logger.fine( "onEmpty " + b.getID() );
 			}
 
 			public void onIdle() {
-				logger.trace("onIdle {}", b.getID());
+				logger.fine( "onIdle " + b.getID() );
 			}
 
 			public void onDestroy() {
-				logger.trace("onDestroy {}", b.getID());
+				logger.fine( "onDestroy " + b.getID() );
 			}
 		});
 		resource.setBroadcaster(b);

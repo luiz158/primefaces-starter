@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  * 
  */
-package com.mycompany.util;
+package com.mycompany.model;
 
 import com.mycompany.model.City;
 import com.mycompany.model.Content;

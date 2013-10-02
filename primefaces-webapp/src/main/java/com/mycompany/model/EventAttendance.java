@@ -31,8 +31,6 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-import com.mycompany.util.Queries;
-
 /**
  * JPA entity for user event attendance data.
  * 

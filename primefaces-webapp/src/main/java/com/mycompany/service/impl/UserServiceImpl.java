@@ -35,7 +35,7 @@ import com.mycompany.model.RelationshipType;
 import com.mycompany.model.User;
 import com.mycompany.model.UserRelationship;
 import com.mycompany.service.UserService;
-import com.mycompany.util.Queries;
+import com.mycompany.model.Queries;
 
 /**
  * User service implementation class.

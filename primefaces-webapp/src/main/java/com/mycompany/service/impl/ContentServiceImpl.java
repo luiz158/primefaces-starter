@@ -31,7 +31,7 @@ import javax.persistence.TypedQuery;
 
 import com.mycompany.model.Content;
 import com.mycompany.service.ContentService;
-import com.mycompany.util.Queries;
+import com.mycompany.model.Queries;
 
 /**
  * Content service implementation class.
@@ -52,7 +52,7 @@ public class ContentServiceImpl extends AbstractService implements ContentServic
 			query.setParameter(1, name);
 			found = query.getSingleResult();
 		} catch (NoResultException e) {
-			logger.info("No content found: {}", name);
+			logger.info("No content found: " + name);
 		}
 		return found;
 	}

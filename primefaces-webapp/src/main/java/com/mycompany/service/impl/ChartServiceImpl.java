@@ -32,7 +32,7 @@ import javax.persistence.Query;
 
 import com.mycompany.model.Gender;
 import com.mycompany.service.ChartService;
-import com.mycompany.util.Queries;
+import com.mycompany.model.Queries;
 
 /**
  * Chart service implementation class.

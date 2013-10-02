@@ -42,8 +42,6 @@ import javax.persistence.TemporalType;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
-import com.mycompany.util.Queries;
-
 /**
  * JPA entity for event data.
  * 

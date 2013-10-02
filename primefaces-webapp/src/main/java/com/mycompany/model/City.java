@@ -30,8 +30,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
-import com.mycompany.util.Queries;
-
 /**
  * JPA entity class for city data.
  * 

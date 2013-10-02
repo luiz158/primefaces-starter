@@ -36,8 +36,6 @@ import javax.persistence.OneToMany;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
-import com.mycompany.util.Queries;
-
 /**
  * JPA entity for country data.
  * 

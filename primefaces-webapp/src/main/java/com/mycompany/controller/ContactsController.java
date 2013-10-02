@@ -74,7 +74,7 @@ public class ContactsController extends AbstractController {
 		List<User> users = userService.findUsersByName(suggest);
 		// remove current user from list
 		users.remove(getLoggedInUser());
-		logger.info("Found {}  users for '{}'", users.size(), suggest);
+		logger.info("Found " + users.size() + " users for '" + suggest + "'");
 		return users;
 	}
 

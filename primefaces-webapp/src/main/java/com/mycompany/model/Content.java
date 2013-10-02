@@ -36,8 +36,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
-import com.mycompany.util.Queries;
-
 /**
  * JPA entity for content data.
  * 

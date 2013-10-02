@@ -27,6 +27,7 @@ package com.mycompany.service.impl;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -42,7 +43,7 @@ import com.mycompany.model.City;
 import com.mycompany.model.Country;
 import com.mycompany.model.ProvinceState;
 import com.mycompany.service.CountryService;
-import com.mycompany.util.Queries;
+import com.mycompany.model.Queries;
 
 /**
  * 
@@ -67,7 +68,7 @@ public class CountryServiceImpl extends AbstractService implements CountryServic
 			country.getProvinceStates().add(state);
 			em.persist(state);
 		} catch (Exception e) {
-			logger.error("Unable to create province/state object:", e);
+			logger.log( Level.SEVERE, "Unable to create province/state object:", e );
 		}
 		return state;
 	}

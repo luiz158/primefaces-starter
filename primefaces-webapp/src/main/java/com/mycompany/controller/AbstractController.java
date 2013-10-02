@@ -28,12 +28,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 
+import java.util.logging.Logger;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.context.FacesContext;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.mycompany.model.User;
 import com.mycompany.util.UserSession;
@@ -55,7 +53,7 @@ public abstract class AbstractController implements Serializable {
 	 */
 	private static final long serialVersionUID = -4862069600034765532L;
 
-	protected transient Logger logger = LoggerFactory.getLogger(getClass());
+	protected transient Logger logger = Logger.getLogger(getClass().getName());
 
 	@ManagedProperty(value = "#{userSession}")
 	protected UserSession userSession;
@@ -96,7 +94,7 @@ public abstract class AbstractController implements Serializable {
 	 */
 	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
 		ois.defaultReadObject();
-		logger = LoggerFactory.getLogger(getClass());
+		logger = Logger.getLogger(getClass().getName());
 	}
 
 	public void setUserSession(UserSession userSession) {

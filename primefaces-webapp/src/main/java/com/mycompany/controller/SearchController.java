@@ -31,6 +31,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.List;
 
+import java.util.logging.Level;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.faces.bean.ManagedBean;
@@ -131,7 +132,7 @@ public class SearchController extends AbstractController {
 						+ address;
 				ObjectMapper mapper = new ObjectMapper();
 				JsonNode root = mapper.readTree(new URL(uri));
-				logger.info("{}", root);
+				logger.info(root.toString());
 				JsonNode geometry = root.findValue("geometry");
 				if (geometry.isMissingNode()) {
 					return null;
@@ -150,11 +151,11 @@ public class SearchController extends AbstractController {
 			}
 			coords = new LatLng(venue.getLatitude(), venue.getLongitude());
 		} catch (UnsupportedEncodingException e) {
-			logger.error("Exception: {}", e);
+			logger.log( Level.SEVERE, "Exception: " + e, e );
 		} catch (MalformedURLException e) {
-			logger.error("Exception: {}", e);
+          logger.log( Level.SEVERE, "Exception: " + e, e );
 		} catch (IOException e) {
-			logger.error("Exception: {}", e);
+          logger.log( Level.SEVERE, "Exception: " + e, e );
 		}
 		return coords;
 	}
@@ -247,7 +248,7 @@ public class SearchController extends AbstractController {
 		for (Event event : events) {
 			LatLng coords = getCoordinates(event.getVenue());
 			if (coords == null) {
-				logger.warn("Warning - no coordinates for location: "
+                logger.log( Level.WARNING, "Warning - no coordinates for location: "
 						+ event.getVenue().getCompleteAddress());
 				continue;
 			}

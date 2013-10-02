@@ -26,6 +26,7 @@ package com.mycompany.controller;
 
 import java.io.IOException;
 
+import java.util.logging.Level;
 import javax.faces.application.NavigationHandler;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -95,7 +96,7 @@ public class LoginController extends AbstractController {
 				outcome = "members";
 			}
 		} catch (Exception e) {
-			logger.error("Unable to login:", e);
+			logger.log( Level.SEVERE, "Unable to login:", e );
 		}
 		return outcome;
 	}

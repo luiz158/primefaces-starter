@@ -47,7 +47,7 @@ import com.mycompany.model.User;
 import com.mycompany.model.Venue;
 import com.mycompany.model.Venue_;
 import com.mycompany.service.EventService;
-import com.mycompany.util.Queries;
+import com.mycompany.model.Queries;
 
 /**
  * Event service implementation class.
