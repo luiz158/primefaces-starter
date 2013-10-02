@@ -5,6 +5,18 @@
 
     <jta-data-source>jdbc/mycompanyDataSource</jta-data-source>
 
+    <class>com.mycompany.model.Idea</class>
+    <class>com.mycompany.model.City</class>
+    <class>com.mycompany.model.Event</class>
+    <class>com.mycompany.model.EventType</class>
+    <class>com.mycompany.model.EventAttendance</class>
+    <class>com.mycompany.model.Country</class>
+    <class>com.mycompany.model.Content</class>
+    <class>com.mycompany.model.User</class>
+    <class>com.mycompany.model.ProvinceState</class>
+    <class>com.mycompany.model.UserRelationship</class>
+    <class>com.mycompany.model.Venue</class>
+
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
     <validation-mode>AUTO</validation-mode>
