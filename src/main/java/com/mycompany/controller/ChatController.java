@@ -45,9 +45,6 @@ import com.mycompany.model.User;
 @ViewScoped
 public class ChatController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -2706002474535643832L;
 
 	private String globalMessage;

@@ -62,9 +62,6 @@ import com.mycompany.service.EventService;
 @ViewScoped
 public class EventController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1256165484728132802L;
 
 	private List<Event> allEvents;

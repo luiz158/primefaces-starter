@@ -49,9 +49,6 @@ import com.mycompany.service.IdeaService;
 @ViewScoped
 public class MindMapController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 4810848975079411459L;
 
 	@ManagedProperty(value = "#{ideaService}")

@@ -49,9 +49,6 @@ import com.mycompany.service.UserService;
 @ViewScoped
 public class ContactsController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1709154434943491658L;
 
 	private List<User> colleagues;

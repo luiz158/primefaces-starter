@@ -51,7 +51,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
  * 
  */
 @Entity
-@Table(	name = "USERS",
+@Table(	name = "Users",
 		uniqueConstraints = { @UniqueConstraint(columnNames = "username"),
 				@UniqueConstraint(columnNames = "emailaddress") })
 @NamedQueries({
@@ -66,11 +66,9 @@ public class User extends AbstractEntity {
 	private static final String[] excludedFields = new String[] { "fromRelationships",
 			"toRelationships", "eventsAttended" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 8009394076089033693L;
 
+  @javax.persistence.Column( columnDefinition = "boolean" )
 	private boolean acceptedTerms;
 
 	private Date birthdate;

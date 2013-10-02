@@ -45,9 +45,6 @@ public class ProvinceState extends AbstractEntity {
 
 	private static final String[] excludeFields = new String[] { "cities" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 5984616633801173028L;
 
 	private Set<City> cities = new HashSet<City>();

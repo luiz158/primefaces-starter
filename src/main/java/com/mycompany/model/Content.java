@@ -48,9 +48,6 @@ import javax.persistence.UniqueConstraint;
 							query = "select c from Content c where c.viewId=?1"))
 public class Content extends AbstractEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 5714237132670562107L;
 
 	private User createdBy;

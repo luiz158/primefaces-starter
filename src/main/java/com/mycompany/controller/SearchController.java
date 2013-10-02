@@ -67,9 +67,6 @@ import com.mycompany.service.EventService;
 @ViewScoped
 public class SearchController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 3648708195333963881L;
 
 	private boolean alcoholPermitted;

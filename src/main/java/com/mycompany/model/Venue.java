@@ -47,9 +47,6 @@ public class Venue extends AbstractEntity {
 
 	private static final String[] excludedFields = new String[] { "events" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 5049478213946349124L;
 
 	private City city;

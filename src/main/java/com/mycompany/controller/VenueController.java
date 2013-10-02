@@ -52,9 +52,6 @@ import com.mycompany.service.VenueService;
 @ViewScoped
 public class VenueController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1127963225862339644L;
 
 	@ManagedProperty(value = "#{countryService}")

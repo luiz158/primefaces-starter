@@ -48,9 +48,6 @@ import com.mycompany.util.UserSession;
  */
 public abstract class AbstractController implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -4862069600034765532L;
 
 	protected transient Logger logger = Logger.getLogger(getClass().getName());

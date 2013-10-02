@@ -50,9 +50,6 @@ import com.mycompany.service.UserService;
 @ViewScoped
 public class LoginController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -6710063228036238737L;
 
 	@ManagedProperty(value = "#{activeUsers}")

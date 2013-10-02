@@ -49,9 +49,6 @@ import com.mycompany.service.ContentService;
 @ViewScoped
 public class ContentController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5256865616437754501L;
 
 	private Content content;

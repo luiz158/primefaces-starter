@@ -47,9 +47,6 @@ import com.mycompany.service.UserService;
 @ViewScoped
 public class UserController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1140838618640961470L;
 
 	@ManagedProperty(value = "#{activeUsers}")

@@ -48,9 +48,6 @@ public class Idea extends AbstractEntity {
 
 	private static final String[] excludeFields = new String[] { "parent", "children" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5778367117092282684L;
 
 	private User author;

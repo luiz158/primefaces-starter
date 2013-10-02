@@ -45,9 +45,6 @@ import org.primefaces.model.DefaultDashboardModel;
 @ViewScoped
 public class DashboardController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -291033332986147359L;
 
 	private DashboardModel model;

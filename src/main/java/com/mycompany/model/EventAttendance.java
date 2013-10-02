@@ -48,9 +48,6 @@ import javax.persistence.UniqueConstraint;
 					query = "select e.event.startDate, count(e.user.gender) from EventAttendance e where e.user.gender = ?1 and e.confirmed = TRUE group by e.event order by e.event.startDate ") })
 public class EventAttendance extends AbstractEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -4351135973935030713L;
 
 	private boolean confirmed;

@@ -41,9 +41,6 @@ import javax.persistence.NamedQuery;
 							query = "select c from City c where c.name = ?1 and c.provinceState = ?2"))
 public class City extends AbstractEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1124357744815785459L;
 
 	private Double latitude;

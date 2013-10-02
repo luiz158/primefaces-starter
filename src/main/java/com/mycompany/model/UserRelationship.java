@@ -42,9 +42,6 @@ import javax.persistence.UniqueConstraint;
 		"relationshipType" }))
 public class UserRelationship extends AbstractEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5157091586647676960L;
 
 	private RelationshipType relationshipType;

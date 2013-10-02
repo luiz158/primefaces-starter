@@ -59,9 +59,6 @@ import com.mycompany.service.UserService;
 @ViewScoped
 public class ChartController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1999623701433215717L;
 
 	private CartesianChartModel barChartModel;

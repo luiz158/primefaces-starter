@@ -47,9 +47,6 @@ public class UserSession implements Serializable {
 	@Inject
 	private ActiveUsers activeUsers;
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 8195784747974150341L;
 
 	private User user;

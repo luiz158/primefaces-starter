@@ -40,9 +40,6 @@ import javax.faces.bean.ManagedBean;
 @ApplicationScoped
 public class ActiveUsers extends ArrayList<User> {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -3068333669859836249L;
 
 }

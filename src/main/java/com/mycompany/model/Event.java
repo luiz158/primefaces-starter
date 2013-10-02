@@ -55,9 +55,6 @@ public class Event extends AbstractEntity {
 
 	private static final String[] excludedFields = new String[] { "attendance" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1853185041344918956L;
 
 	private Set<EventAttendance> attendance = new HashSet<EventAttendance>();

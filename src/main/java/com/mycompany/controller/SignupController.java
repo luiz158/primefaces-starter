@@ -51,9 +51,6 @@ import com.mycompany.service.UserService;
 @ViewScoped
 public class SignupController extends AbstractController {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -3479887222411577225L;
 
 	@ManagedProperty(value = "#{countryService}")

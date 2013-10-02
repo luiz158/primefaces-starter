@@ -40,9 +40,6 @@ import com.mycompany.controller.LoginController;
  */
 public class SecurityPhaseListener implements PhaseListener {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1013239137374622294L;
 
 	@Override

@@ -47,9 +47,6 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class AbstractEntity implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -489637051819304520L;
 
 	private Integer id;

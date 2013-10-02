@@ -51,9 +51,6 @@ public class Country extends AbstractEntity {
 
 	private static final String[] excludeFields = new String[] { "provinceStates" };
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -4925972235656394450L;
 
 	private String code;
