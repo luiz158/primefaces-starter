@@ -41,7 +41,6 @@ import com.mycompany.service.UserService;
  * Controller class for user-related functionality.
  * 
  * @author Ian Hlavats (ian@tarantulaconsulting.com)
- * @uml.dependency supplier="com.mycompany.util.UserSession"
  */
 @ManagedBean
 @ViewScoped

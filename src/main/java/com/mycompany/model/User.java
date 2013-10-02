@@ -68,7 +68,6 @@ public class User extends AbstractEntity {
 
 	private static final long serialVersionUID = 8009394076089033693L;
 
-  @javax.persistence.Column( columnDefinition = "boolean" )
 	private boolean acceptedTerms;
 
 	private Date birthdate;
@@ -171,7 +170,7 @@ public class User extends AbstractEntity {
 		return HashCodeBuilder.reflectionHashCode(this, excludedFields);
 	}
 
-	@Column(columnDefinition = "smallint not null default 0")
+    @Column( columnDefinition = "boolean not null" )
 	public boolean isAcceptedTerms() {
 		return acceptedTerms;
 	}

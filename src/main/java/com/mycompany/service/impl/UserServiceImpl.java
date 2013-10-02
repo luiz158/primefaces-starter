@@ -40,7 +40,6 @@ import com.mycompany.model.Queries;
 /**
  * User service implementation class.
  * 
- * @uml.dependency supplier="javax.persistence.EntityManager"
  */
 @Named("userService")
 @Stateless

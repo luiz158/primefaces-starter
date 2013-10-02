@@ -45,7 +45,6 @@ import com.mycompany.service.UserService;
  * Controller class for new user signup.
  * 
  * @author Ian Hlavats (ian@tarantulaconsulting.com)
- * @uml.dependency supplier="com.mycompany.model.Country"
  */
 @ManagedBean
 @ViewScoped

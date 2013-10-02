@@ -44,7 +44,6 @@ import com.mycompany.service.UserService;
  * Controller class for desktop and mobile login functionality.
  * 
  * @author Ian Hlavats (ian@tarantulaconsulting.com)
- * @uml.dependency supplier="com.mycompany.controller.AbstractController"
  */
 @ManagedBean
 @ViewScoped
