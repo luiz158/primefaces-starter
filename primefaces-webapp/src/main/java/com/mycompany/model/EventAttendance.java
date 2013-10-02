@@ -45,7 +45,7 @@ import javax.persistence.UniqueConstraint;
 		@NamedQuery(name = Queries.EVENT_ATTENDANCE_FIND_BY_USER,
 					query = "select e from EventAttendance e where e.user = ?1 order by e.event.startDate desc"),
 		@NamedQuery(name = Queries.EVENT_ATTENDANCE_FIND_GENDER_COUNT_BY_EVENT,
-					query = "select e.event.startDate, count(e.user.gender) from EventAttendance e where e.user.gender = ?1 and e.confirmed is true group by e.event order by e.event.startDate ") })
+					query = "select e.event.startDate, count(e.user.gender) from EventAttendance e where e.user.gender = ?1 and e.confirmed = TRUE group by e.event order by e.event.startDate ") })
 public class EventAttendance extends AbstractEntity {
 
 	/**
