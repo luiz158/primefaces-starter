@@ -7,8 +7,6 @@
     <persistence-unit-defaults>
       <!-- Explicitly indicate that all identifiers will be quoted. -->
       <delimited-identifiers/>
-      <entity-listeners>
-      </entity-listeners>
     </persistence-unit-defaults>
   </persistence-unit-metadata>
 
